@@ -29,6 +29,6 @@ RUN mkdir -p /root/.config/tidbyt/
 COPY private.yaml /root/.config/tidbyt/private.yaml
 
 RUN rm /etc/crontabs/root
-ln -s /app/crontab /etc/crontabs/root
+RUN ln -s /app/crontab /etc/crontabs/root
 
 EXPOSE 8080
