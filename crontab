@@ -1,4 +1,4 @@
 # do daily/weekly/monthly maintenance
 # min	hour	day	month	weekday	command
-*/5	*	*	*	*	/bin/sh -c "cd /app && ./push_all.sh"
+*/15	*	*	*	*	/bin/sh -c "cd /app && ./push_all.sh"
 0	*	*	*	*	/bin/sh -c "cd /app && ./force_update.sh"
